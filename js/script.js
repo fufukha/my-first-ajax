@@ -7,11 +7,11 @@ document.addEventListener ("DOMContentLoaded", function (event) {
 				var firstName = res[selectedPerson].firstName;
 				var lastName = res[selectedPerson].lastName;
 				var address = res[selectedPerson].address;
-				var content = firstName + " "
-				    content += "<span>" + lastName + "</span><br>"
-				    content += "<address>" + address + "</address>"
+				var content = "<address><strong>" + firstName + " ";
+				    content += "<span class=text-uppercase>" + lastName + "</span></strong><br>"
+				    content += address + "</address>"
 
-				document.querySelector("p")
+				document.querySelector("#content")
 					.innerHTML = content 
 			});
 			
