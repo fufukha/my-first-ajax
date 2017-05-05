@@ -2,19 +2,37 @@
 <html>
 <head>
 	<title>First AJAX/JSON</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--JS-->
 	<script type="text/javascript" src="js/ajax-utils.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<section>
-		<h1>Find Address</h1>
-		<select>
-			<option selected disabled>Choose Here</option>
-			<option value="Poirot">Hercule Poirot</option>
-			<option value="Black">Sirus Black</option>
-			<option value="Holmes">Sherlock Holmes</option>
-		</select>
-		<div id="content"></div>
-	</section>
+	<div class="container">
+		<section>
+			<h1 class="text-center">Address Finder</h1>
+
+			<form class="form-horizontal">
+				<div class="form-group form-group-lg container">				
+					<label for="contectselect" class="control-label col-sm-2">Contact</label>
+					<div class="col-sm-8">
+						<select id="contactselect" class="form-control input-lg">
+							<option selected disabled>Choose Here</option>
+							<option value="Poirot">Hercule Poirot</option>
+							<option value="Black">Sirus Black</option>
+							<option value="Holmes">Sherlock Holmes</option>
+						</select>
+					</div>
+				</div><!--form-group-->
+			</form>
+		</section>
+		
+		<!--Address Section--> 
+		<section class="section-secondary"> 
+			<div id="content" class="col-sm-offset-2 well well-lg col-sm-4"></div>
+		</section>  
+	</div><!--container-->
 </body>
 </html>
