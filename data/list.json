@@ -1,0 +1,17 @@
+{
+	"Holmes": { 
+		"firstName": "Sherlock", 
+		"lastName": "Holmes",
+		"address": "221 Baker St."
+	}, 
+	"Poirot": { 
+		"firstName": "Hercule", 
+		"lastName": "Poirot",
+		"address": "56B Whitehaven Mansions"
+	},
+	"Black": { 
+		"firstName": "Sirus", 
+		"lastName": "Black",
+		"address": "12 Grimmauld Place"
+	}
+}
